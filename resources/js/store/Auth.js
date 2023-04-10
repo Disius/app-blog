@@ -1,7 +1,6 @@
 import {defineStore} from "pinia";
 import {computed, ref, watch} from "vue";
 import axios from "axios";
-import {pinia} from "./store";
 import {router} from "../routes/router";
 
 
@@ -43,7 +42,7 @@ export const useUserStore = defineStore('userStore', () => {
     }
 
     function logout(){
-        axios.post('/api/logout', {
+        axios.post('/api/logout', {}, {
             headers: {
                 'Authorization': `Bearer ${token.value}`
             }

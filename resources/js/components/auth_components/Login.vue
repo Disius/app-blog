@@ -59,6 +59,7 @@ const password = ref('');
 
 const submit = () => {
     Auth.login({email: email.value, password: password.value});
+    Auth.userInfo()
     router.push({path: '/mydash'})
 }
 

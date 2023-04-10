@@ -3,14 +3,11 @@
     <router-view></router-view>
 </template>
 
-<script>
+<script setup>
 import Main from "./components/Main.vue";
 import Nav from "./components/Nav.vue";
 
-export default {
-    name: "App",
-    components: {Nav, Main}
-}
+
 </script>
 
 <style>

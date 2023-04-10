@@ -3,7 +3,7 @@ import Register from "../components/auth_components/Register.vue";
 import Main from "../components/Main.vue";
 import Login from "../components/auth_components/Login.vue";
 import MyDash from "../components/myDash.vue";
-import {useUserStore} from "../store/Auth";
+
 
 
 export const routes = [
